@@ -48,7 +48,7 @@ nav{
 }
 /*END OF THE SECOND MODAL*/
 .text-muted{
-    color:#8B8A83 !important;
+    color:#74736D !important;
 }
 .font-size-9{
     font-size:9px!important;
@@ -153,4 +153,10 @@ th.uk-text-center.text-muted.font-size-12.font-weight-500{
 #icons-card-job{
     position: relative;
     top:-4px;
+}
+.pointer{
+    cursor:pointer;
+}
+.padding-bottom-0{
+    padding-bottom: 0px !important;
 }

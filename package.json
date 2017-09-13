@@ -4,7 +4,8 @@
   "description": "Just to check materializecss",
   "main": "index.js",
   "scripts": {
-    "test": "none"
+    "postinstall": "npm install",
+    "start": "node server.js"
   },
   "author": "Arpit Anand",
   "license": "MIT",
