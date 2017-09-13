@@ -43,3 +43,7 @@ hr.controller('skillSetController' , ['$scope','$rootScope','$http' ,'$sce', fun
 hr.controller('resumeController' , ['$scope','$rootScope','$http' ,'$sce', function($scope ,$rootScope, $http , $sce){
 
 }]);
+
+hr.controller('domainController' , ['$scope','$rootScope','$http' ,'$sce', function($scope ,$rootScope, $http , $sce){
+
+}]);

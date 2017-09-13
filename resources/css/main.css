@@ -175,7 +175,7 @@ th.uk-text-center.text-muted.font-size-12.font-weight-500{
 }
 .thead-border-2{
     border-bottom:1px solid #D0CDC7;
-    
+
 }
 .badge-primary{
     background-color: #2196f3;
@@ -256,3 +256,38 @@ th.uk-text-center.text-muted.font-size-12.font-weight-500{
     -moz-transition: all 0.1s ease-in-out;
     -o-transition: all 0.1s ease-in-out;      
 }
+/* label color */
+.input-field label {
+    color: #0075CE!important;
+}
+/* label focus color */
+.input-field input[type=text]:focus + label {
+    color: #0075CE !important;
+}
+/* label underline focus color */
+.input-field input[type=text]:focus {
+    border-bottom: 1px solid #0075CE;
+    box-shadow: 0 1px 0 0 #0075CE !important;
+}
+/* valid color */
+.input-field input[type=text].valid {
+    border-bottom: 1px solid #0075CE !important;
+    box-shadow: 0 1px 0 0 #0075CE !important;
+}
+/* invalid color */
+.input-field input[type=text].invalid {
+    border-bottom: 1px solid #0075CE !important;
+    box-shadow: 0 1px 0 0 #0075CE !important;
+}
+/* icon prefix focus color */
+.input-field .prefix.active {
+    color: #0075CE !important;
+}
+option{  color:#0075CA!important;
+}    
+.margin-bottom-5x{
+    margin-bottom:5px;
+}
+
+/*Custom dropdowm*/
+
