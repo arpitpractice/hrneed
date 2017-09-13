@@ -5,7 +5,7 @@ hr.config([ '$routeProvider' , '$locationProvider' ,  function($routeProvider , 
         controller : 'companyProfileController'
     })
         .when('/departments' , {
-        templateUrl : 'public/departments',
+        templateUrl : 'public/departments.html',
         controller : 'departmentsController'
     })
         .when('/designations' , {
