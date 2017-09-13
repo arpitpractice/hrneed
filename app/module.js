@@ -1,0 +1,1 @@
+var hr  = angular.module('hr' , ['ngRoute' , 'ngSanitize']);
