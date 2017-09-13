@@ -40,3 +40,6 @@ hr.controller('profileSourcesController' , ['$scope','$rootScope','$http' ,'$sce
 hr.controller('skillSetController' , ['$scope','$rootScope','$http' ,'$sce', function($scope ,$rootScope, $http , $sce){
 
 }]);
+hr.controller('resumeController' , ['$scope','$rootScope','$http' ,'$sce', function($scope ,$rootScope, $http , $sce){
+
+}]);
