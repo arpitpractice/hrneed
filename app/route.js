@@ -1,6 +1,6 @@
 hr.config([ '$routeProvider' , '$locationProvider' ,  function($routeProvider , $locationProvider){
     $routeProvider
-    .when('/companyProfile' , {
+        .when('/companyProfile' , {
         templateUrl : 'public/companyProfile.html',
         controller : 'companyProfileController'
     })
@@ -51,6 +51,10 @@ hr.config([ '$routeProvider' , '$locationProvider' ,  function($routeProvider , 
         .when('/skillSet' , {
         templateUrl : 'public/skillSet.html',
         controller : 'skillSetController'
+    })
+        .when('/viewResume' , {
+        templateUrl : 'public/resumes.html',
+        controller : 'resumeController'
     })
         .otherwise({
         redirectTo :  '/addJob'

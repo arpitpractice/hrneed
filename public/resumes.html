@@ -1,0 +1,204 @@
+<br />
+<div class="col l12 m12 s12">
+
+    <div class="left text-muted font-size-12 font-weight-700">Total Jobs</div>
+    <div class="right sidebar-adjust">
+        <ul class="inline-block">
+            <li>
+                <button data-target="modal1" class="modal-trigger btn waves-effect waves-light font-size-10 btn-reset btn-post font-weight-500" id="post_job">POST A JOB <i class="material-icons font-size-10">add</i></button>
+            </li>
+            <li>
+                <button onclick="toggle()" id="toggle-class" class="btn waves-effect waves-light font-size-12 btn-reset btn-post font-weight-500" id="post_job"><i class="mdi mdi-view-list font-size-12"></i></button>
+            </li>
+        </ul>
+    </div>
+    <span class="clearfix"></span>
+</div>
+<br />
+<div id="table-wrapper">
+    <div class="card">
+        <div class="">
+            <table class="capitalize table striped bordered centered responsive-table">
+                <thead class="thead-border">
+                    <tr>
+                        <th class="uk-text-center text-muted font-size-12 font-weight-500">Name</th>
+                        <th class="uk-text-center text-muted font-size-12 font-weight-500">Exp.</th>
+                        <th class="uk-text-center text-muted font-size-12 font-weight-500">Current Company</th>
+                        <th class="uk-text-center text-muted font-size-12 font-weight-500">Designation</th>
+                        <th class="uk-text-center text-muted font-size-12 font-weight-500">Email</th>
+                        <th class="uk-text-center text-muted font-size-12 font-weight-500">Phone</th>
+                        <th class="uk-text-center text-muted font-size-12 font-weight-500">Resumes</th>
+                        <th class="uk-text-center text-muted font-size-12 font-weight-500">Status</th>
+                        <th class="uk-text-center text-muted font-size-12 font-weight-500">Opr.<th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="uk-text-center"><p class="uk-text-center text-muted font-size-12 font-weight-500">Travis Nelison</p></td>
+                        <td class="uk-text-center text-muted font-size-12 font-weight-500">
+                            6 yrs
+                        </td>
+                        <td><span class="text-muted font-size-12 font-weight-500">SocialCops</span></td>
+                        <td class="uk-text-center text-muted font-size-12 font-weight-500">Data Scientist</td>
+                        <td class="uk-text-center text-muted font-size-12 font-weight-500">travis@neliosn.com</td>
+
+                        <td><p class="uk-text-center text-muted font-size-12 font-weight-500">+91-0000000000</p></td>
+                        <td class="uk-text-center text-muted font-size-12 font-weight-500"><a href="add-resume.html">View</a></td>
+                        <td><p class="badge badge-primary">Expired</p></td>
+                        <td class="uk-text-center text-muted font-size-12 font-weight-500"><ul class="inline-block">
+                            <li>
+                                <div data-uk-tooltip="{pos:'bottom'}" title="Edit" class="border-radius-2px md-icon-light uk-button-dropdown" data-uk-dropdown="{mode:'hover' , pos : 'right-center'}"> <i class="mdi mdi-table-edit  uk-text-muted mdi-24px"></i></div>
+                            </li>
+                            <li>
+                                <div data-uk-tooltip="{pos:'bottom'}" title="Delete" class="icon-adjust-profile-page border-radius-2px md-icon-light uk-button-dropdown" data-uk-dropdown="{mode:'hover' , pos : 'right-center'}"> <i class="mdi mdi-delete-variant  uk-text-muted mdi-24px"></i></div>
+                            </li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<div class="display-none" id="grid-wrapper">
+    <div class="row">
+        <div class="col s12 m12 l6">
+            <div class="card">
+                <div class="card padding-9">
+                    <div class="card-content padding-bottom-0">
+                        <span class="pull-left">
+                            <p class="text-muted font-size-13 color-blue font-weight-500">24 Jan 2017 : <span class="black-text font-weight-500 text-muted">Data Analytics</span></p>
+                        </span>
+                        <span class="pull-right" id="icons-card-job">
+                            <ul class="inline-block">
+                                <li><i class="text-muted mdi mdi-24px mdi-table-edit"></i></li>
+                                <li><i class="text-muted mdi mdi-24px mdi-delete-variant" style="position: relative;top:-2px;"></i></li>
+                            </ul>
+                        </span>
+                        <span class="clearfix"></span>
+                        <hr class="thead-border-1"/>
+                        <div class="text-detail pull-left">
+                            <div class="text-heading-small font-size-11  font-weight-700">Designation</div>
+                            <span class="text-body-small font-size-13    text-muted font-weight-500 ">Data Scientist</span>
+                        </div>
+                        <div class="text-detail pull-right">
+                            <div class="text-heading-small font-size-11  font-weight-700" style="text-align:right">Skills</div>
+                            <span class="text-body-small font-size-13    text-muted font-weight-500 ">Python, R, Analytics</span>
+                        </div>
+                        <span class="clearfix"></span>
+                        <br />
+                        <div class="text-detail pull-left">
+                            <div class="text-heading-small font-size-11  font-weight-700">CTC</div>
+                            <span class="text-body-small font-size-13    text-muted font-weight-500 ">10-12 LAC</span>
+                        </div>
+                        <div class="text-detail pull-right">
+                            <div class="text-heading-small font-size-11  font-weight-700">Experience</div>
+                            <span class="text-body-small font-size-13    text-muted font-weight-500 ">2 - 5 years</span>
+                        </div>
+                        <span class="clearfix"></span>
+                        <br />
+                        <div class="text-detail pull-left">
+                            <div class="text-heading-small font-size-12  font-weight-700"><a href="#/viewResume">View Resume</a></div>
+
+                        </div>
+
+                        <span class="clearfix"></span>
+                        <!--Card content here-->
+                        <hr class="thead-border-1" />
+                        <div class="social-icons pull-left">
+                            <ul class="inline-block">
+                                <li><i class="pointer mdi mdi-facebook-box mdi-24px" style="color:#3b5998;"></i></li>
+                                <li><i class="pointer mdi mdi-linkedin-box mdi-24px" style="color:#0077B5;"></i></li>
+                                <li><i style="color:#333;" class="pointer mdi mdi-github-box mdi-24px"></i></li>
+                            </ul>
+                        </div>
+                        <div class="pull-right">
+                            <span class="card-title activator grey-text text-muted"><i class="material-icons right">more_vert</i></span>
+                        </div>
+                        <span class="clearfix"></span>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title text-muted font-size-13">Job Description<i class="material-icons right">close</i></span>
+                        <br />
+                        <p class="text-muted font-size-13">
+                            Needed a Data Analytics person, having deep knowledge in Python,R,Javascript.
+                            Knowledge of Lua Prograaming langugae is an added advantage
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="col s12 m12 l6">
+            <div class="card">
+                <div class="card padding-9">
+                    <div class="card-content padding-bottom-0">
+                        <span class="pull-left">
+                            <p class="text-muted font-size-13 color-blue font-weight-500">24 Jan 2017 : <span class="black-text font-weight-500 text-muted">Data Analytics</span></p>
+                        </span>
+                        <span class="pull-right" id="icons-card-job">
+                            <ul class="inline-block">
+                                <li><i class="text-muted mdi mdi-24px mdi-table-edit"></i></li>
+                                <li><i class="text-muted mdi mdi-24px mdi-delete-variant" style="position: relative;top:-2px;"></i></li>
+                            </ul>
+                        </span>
+                        <span class="clearfix"></span>
+                        <hr class="thead-border-1"/>
+                        <div class="text-detail pull-left">
+                            <div class="text-heading-small font-size-11  font-weight-700">Designation</div>
+                            <span class="text-body-small font-size-13    text-muted font-weight-500 ">Data Scientist</span>
+                        </div>
+                        <div class="text-detail pull-right">
+                            <div class="text-heading-small font-size-11  font-weight-700" style="text-align:right">Skills</div>
+                            <span class="text-body-small font-size-13    text-muted font-weight-500 ">Python, R, Analytics</span>
+                        </div>
+                        <span class="clearfix"></span>
+                        <br />
+                        <div class="text-detail pull-left">
+                            <div class="text-heading-small font-size-11  font-weight-700">CTC</div>
+                            <span class="text-body-small font-size-13    text-muted font-weight-500 ">10-12 LAC</span>
+                        </div>
+                        <div class="text-detail pull-right">
+                            <div class="text-heading-small font-size-11  font-weight-700">Experience</div>
+                            <span class="text-body-small font-size-13    text-muted font-weight-500 ">2 - 5 years</span>
+                        </div>
+                        <span class="clearfix"></span>
+                        <br />
+                        <div class="text-detail pull-left">
+                            <div class="text-heading-small font-size-12  font-weight-700"><a href="#/viewResume">View Resume</a></div>
+
+                        </div>
+
+                        <span class="clearfix"></span>
+                        <!--Card content here-->
+                        <hr class="thead-border-1" />
+                        <div class="social-icons pull-left">
+                            <ul class="inline-block">
+                                <li><i class="pointer mdi mdi-facebook-box mdi-24px" style="color:#3b5998;"></i></li>
+                                <li><i class="pointer mdi mdi-linkedin-box mdi-24px" style="color:#0077B5;"></i></li>
+                                <li><i style="color:#333;" class="pointer mdi mdi-github-box mdi-24px"></i></li>
+                            </ul>
+                        </div>
+                        <div class="pull-right">
+                            <span class="card-title activator grey-text text-muted"><i class="material-icons right">more_vert</i></span>
+                        </div>
+                        <span class="clearfix"></span>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title text-muted font-size-13">Job Description<i class="material-icons right">close</i></span>
+                        <br />
+                        <p class="text-muted font-size-13">
+                            Needed a Data Analytics person, having deep knowledge in Python,R,Javascript.
+                            Knowledge of Lua Prograaming langugae is an added advantage
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="modal1" class="modal right-sheet">
+    <div class="modal-content">
+
+    </div>
+</div>

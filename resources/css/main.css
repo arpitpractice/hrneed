@@ -1,3 +1,9 @@
+@font-face {
+    font-family: 'Lato';
+    src: url('../fonts/Lato-Regular.eot'), url('../fonts/Lato-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 body,html{
     font-family: 'Lato' , sans-serif !important;
     background-color: #EEECEA !important;
@@ -48,7 +54,7 @@ nav{
 }
 /*END OF THE SECOND MODAL*/
 .text-muted{
-    color:#74736D !important;
+    color:#7A7973 !important;
 }
 .font-size-9{
     font-size:9px!important;
@@ -136,7 +142,7 @@ table.striped>tbody>tr>td{
     display: block !important;
 }
 .card .card-content{
-    padding: 12px !important;
+    padding: 0px !important;
 }
 .color-blue{
     color:#009EF3 !important;
@@ -162,4 +168,91 @@ th.uk-text-center.text-muted.font-size-12.font-weight-500{
 }
 .thead-border{
     border-bottom:2px solid #D0CDC7;
+}
+.thead-border-1{
+    border-bottom:1px solid #D0CDC7;
+    border:0.5px solid #D0CDC7 !important;
+}
+.thead-border-2{
+    border-bottom:1px solid #D0CDC7;
+    
+}
+.badge-primary{
+    background-color: #2196f3;
+    color:white !important;
+}
+.badge-info{
+    background-color: #0097a7;
+    color:white !important;
+}
+.badge-warning{
+    background-color:#ffa000;
+    color:white !important;
+}
+.badge{
+    font-size:10.5px !important;
+    line-height: 1.5;
+    font-weight:500 !important;
+    border-radius:2px;
+    margin-left:0px!important;
+    letter-spacing: 0.8px !important;
+    padding-top:3px !important;
+}
+.padding-6{
+    padding:6px !important;
+    padding-left:3px !important; 
+}
+.padding-reset{
+    padding:0px !important;
+}
+.padding-9{
+    padding:9px !important;
+}
+.mdi-hover:hover{
+    background-color:#727272 !important;
+    height:32px !important;
+    width:32px !important;
+    border-radius: 50% !important;
+}
+.text-primary{
+    color:#2196f3;
+}
+.text-warning{
+    color:#0097a7;
+}
+.text-danger{
+    color:#ffa000;
+}
+.margin-top-3x{
+    margin-top:3px !important;
+}
+.margin-top-8x{
+    margin-top:8px !important;
+}
+.dropdown-content li>a, .dropdown-content li>span{
+    padding:7px 16px !important;
+}
+.dropdown-content li>a, .dropdown-content li>span{
+    font-size:14px !important;
+}
+.dropdown-content li{
+    min-height:40px!important;
+}
+.position-adjust-2{
+    position: relative;
+    top:2px;
+}
+.text-base-color{
+    color:#0075CA;
+}
+.mdi-hover-icon{
+    border-radius:50%;
+}
+.mdi-hover-icon:hover{
+    background-color: rgba(0,0,0,0.2);
+    border-radius:50%;
+    transition: all 0.1s ease-in-out;
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;      
 }
