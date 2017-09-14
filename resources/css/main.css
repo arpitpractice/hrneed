@@ -290,4 +290,37 @@ option{  color:#0075CA!important;
 }
 
 /*Custom dropdowm*/
-
+#logo-image{
+    height: 120px;
+    width: 285px;
+}
+.margin-left-5p{
+    margin-left:5%;
+}
+#section-border-company{
+    border-right:0.5px solid #D0CDC7;
+}
+.font-size-25{
+    font-size:25px !important;
+}
+.margin-left-3{
+    margin-left:3% !important;
+}
+.margin-left-8p{
+    margin-left:8% !important;
+}
+#collection li.collection-item{
+    background-color: transparent !important;
+}
+.padding-bottom-5x{
+    padding-bottom:5px;   
+}
+.eee{
+    background-color:#eee!important;
+}
+table>tbody>tr>td{
+    padding:10px !important;
+}
+.border-none{
+    border:none !important;
+}
