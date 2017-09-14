@@ -57,7 +57,7 @@ hr.config([ '$routeProvider' , '$locationProvider' ,  function($routeProvider , 
         controller : 'resumeController'
     })
         .otherwise({
-        redirectTo :  '/addJob'
+        redirectTo :  '/companyProfile'
     }); 
 
     $locationProvider.hashPrefix('');
