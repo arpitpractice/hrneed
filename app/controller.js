@@ -28,7 +28,7 @@ hr.controller('addEmployeeController' , ['$scope','$rootScope','$http' ,'$sce', 
 
 }]);
 hr.controller('employeeProfileController' , ['$scope','$rootScope','$http' ,'$sce', function($scope ,$rootScope, $http , $sce){
-
+    $scope.currentTab = 'about';//for the tabs.
 }]);
 
 hr.controller('addJobController' , ['$scope','$rootScope','$http' ,'$sce', function($scope ,$rootScope, $http , $sce){

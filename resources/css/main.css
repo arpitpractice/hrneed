@@ -1,11 +1,6 @@
-@font-face {
-    font-family: 'Lato';
-    src: url('../fonts/Lato-Regular.eot'), url('../fonts/Lato-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
+
 body,html{
-    font-family: 'Lato' , sans-serif !important;
+    font-family: 'Roboto' , sans-serif !important;
     background-color: #EEECEA !important;
 }
 
@@ -117,17 +112,7 @@ nav{
         margin-left:20% !important;
     }
 }
-.modal.right-sheet {
-    top: auto;
-    left: 70%;
-    margin: 0;
-    width: 30%;
-    max-height: 100%;
-    height:100%;
-    border-radius: 0;
-    will-change: right, opacity;
-    top:0px !important;
-}
+
 table.striped>tbody>tr>td{
     padding:10px !important;
 }
@@ -197,6 +182,7 @@ th.uk-text-center.text-muted.font-size-12.font-weight-500{
     margin-left:0px!important;
     letter-spacing: 0.8px !important;
     padding-top:1px !important;
+    padding-bottom: 1px !important;
 }
 .padding-6{
     padding:6px !important;
@@ -223,6 +209,13 @@ th.uk-text-center.text-muted.font-size-12.font-weight-500{
 .text-danger{
     color:#ffa000;
 }
+.margin-top-1x{
+    margin-top:1px !important;
+}
+.margin-top-2x{
+    margin-top:2px !important;
+}
+
 .margin-top-3x{
     margin-top:3px !important;
 }
@@ -323,4 +316,162 @@ table>tbody>tr>td{
 }
 .border-none{
     border:none !important;
+}
+.modal.right-sheet {
+    top: auto;
+    left: 70%;
+    margin: 0;
+    width: 30%;
+    max-height: 100%;
+    height:100%;
+    border-radius: 0;
+    will-change: right, opacity;
+    top:0px !important;
+}
+.padding-5{
+    padding:5px;
+}
+.img-profile-employee-list{
+    height:82px;
+    width:82px;
+    border-radius:50%;
+
+}
+.width-20{
+    width:20%;
+    overflow: hidden;
+}
+.base-background-color{
+    background-color: #0096F2;
+}
+.base-color{
+    color: #0096F2 !important;
+}
+.base-background-color:hover{
+    background-color: #0096F2;
+    color:#fff !important;
+}
+.btn-mini {
+    height:31px !important;
+    padding:0 1rem !important;
+    line-height: 1 !important;
+    color:#fff !important;
+}
+.btn:focus, .btn-large:focus, .btn-floating:focus{
+    background-color: #0096F2 !important;
+}
+.btn{
+    background-color: #0096F2 !important;
+    color:#fff !important; 
+}
+.text-white{
+    color:white !important;
+}
+.center{
+    text-align:center !important;
+    margin:0 auto !important;
+}
+
+.margin-left-20p{
+    margin-left:20%;
+}
+#view-profile-img{
+    height:120px;
+    width:120px;
+    object-fit: cover;
+    padding:1px;
+}
+.padding-12x{
+    padding:12px;
+}
+.margin-left-10x{
+    margin-left:10px;
+}
+.margin-top-12x{
+    margin-top:12px !important;
+}
+.margin-top-20x{
+    margin-top:20px !important;
+}
+.margin-left-2x{
+    margin-left:2px !important;
+}
+.color-black{
+    color:black !important;
+}
+.btn-flat:focus , .btn-flat{
+    background-color: rgba(0,0,0,0.1);
+}
+.margin-top-10x{
+    margin-top:10px !important;
+}
+.font-size-18{
+    font-size:18px;
+}
+.font-size-20{
+    font-size:20px;
+}
+.border-left{
+    border-left:0.5px solid #D0CDC7;
+}
+.padding-left-2x{
+    padding-left:2px;
+}
+.text-more-muted{
+    color:#9B9998;
+}
+.container-details li{
+    margin-top: 10px;
+    margin-left: 8px;
+}
+@media all and (max-width : 767px){
+    .whole-content-profile{
+        text-align:center;
+    }
+}
+.tabs .tab a{
+    color:#333;
+    font-size:13px; 
+}
+.tabs .tab a:hover, .tabs .tab a.active{
+    font-size:13px !important;
+    color:#333;
+}
+.tabs .indicator{
+    border-color:#0075CA !important;
+    background-color: #0075CA!important;
+}
+.quesans{
+    border-bottom:0.5px solid rgba(0,0,0,0.1) !important;
+    padding-left: 25px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+.font-weight-100{
+    font-weight:300 !important;
+}
+.tabs{
+    cursor:pointer !important;
+}
+.padding-right-0{
+    padding-right: 0 !important;
+}
+.padding-left-0{
+    padding-left:0 !important;
+}
+
+.waves-effect.waves-blue .waves-ripple {
+    background-color: #0874C9;
+}
+
+.waves-effect.waves-blue-light .waves-ripple {
+    background-color: #44B4E5;
+}
+.active{
+    background-color:#0874C9;
+    border-color:#0874C9;
+    color:#fff
+}
+.pointer{
+    cursor:pointer;
 }

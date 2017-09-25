@@ -15,11 +15,16 @@ $(document).ready(function(){
     $('.modal').modal();
 });
 
-$('#modal1').modal('open');
+
 
 $(document).ready(function() {
     $('select').material_select();
 });
+
+$(document).ready(function(){
+    $('ul.tabs').tabs();
+});
+
 setInterval(function(){
     function doNotification(){
         var myNotification = new Notify('Yo dawg!', {
@@ -47,4 +52,5 @@ setInterval(function(){
     function onPermissionDenied() {
         console.warn('Permission has been denied by the user');
     }
-} , 500000);
+} , 1000000);  
+

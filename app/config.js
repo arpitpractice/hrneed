@@ -23,7 +23,6 @@ hr.run(function ($rootScope, $location,$route) {
     $rootScope.$on('$routeChangeError', function () {
 
         //hide loading gif
-        alert('wtff');
         $rootScope.layout.loading = false;
 
     });

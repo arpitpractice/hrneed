@@ -1,0 +1,144 @@
+<br />
+<div class="col l12 m12 s12">
+
+    <div class="left text-muted font-size-12 font-weight-700">Total Employee:</div>
+    <div class="right sidebar-adjust">
+        <ul class="inline-block">
+            <li>
+                <button class="btn waves-effect waves-light font-size-10 btn-reset btn-post font-weight-500" id="post_job">ADD AN EMPLOYEE<i class="material-icons font-size-10">add</i></button>
+            </li>
+            <li>
+                <button onclick="toggle()" id="toggle-class" class="btn waves-effect waves-light font-size-12 btn-reset btn-post font-weight-500" id="post_job"><i class="mdi mdi-view-list font-size-12"></i></button>
+            </li>
+        </ul>
+    </div>
+    <span class="clearfix"></span>
+</div>
+<hr class="thead-border-1" /><br />
+<div id="table-wrapper">
+    <div class="card">
+        <div class="">
+            <table class="capitalize table striped bordered centered responsive-table">
+                <thead class="thead-border">
+                    <tr>
+
+                        <th class="uk-text-center text-muted font-size-12 font-weight-500">Name</th>
+                        <th class="uk-text-center text-muted font-size-12 font-weight-500">Email</th>
+                        <th class="uk-text-center text-muted font-size-12 font-weight-500">Role</th>
+                        <th class="uk-text-center text-muted font-size-12 font-weight-500">Date of Joining</th>
+                        <th class="uk-text-center text-muted font-size-12 font-weight-500">Location</th>
+                        <th class="uk-text-center text-muted font-size-12 font-weight-500">Status</th>
+                        <th class="uk-text-center text-muted font-size-12 font-weight-500">Opera..</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="uk-text-center text-primary font-size-13 font-weight-500">
+                            Travis Nelison
+                        </td>
+                        <td><span class="text-muted font-size-13 font-weight-500">travis@gmail.com</span></td>
+                        <td class="uk-text-center text-muted font-size-13 font-weight-500">Data Scientist</td>
+                        <td class="uk-text-center text-muted font-size-13 font-weight-500">14/Jun/16</td>
+
+                        <td><p class="uk-text-center text-muted font-size-13 font-weight-500">Los Angeles</p></td>
+                        <td class="uk-text-center text-muted font-size-13 font-weight-500"><a href="">New</a></td>
+                        <td class="uk-text-center text-muted font-size-13 font-weight-500"><ul class="inline-block">
+                            <li>
+                                <div data-uk-tooltip="{pos:'bottom'}" title="Edit" class="border-radius-2px md-icon-light uk-button-dropdown" data-uk-dropdown="{mode:'hover' , pos : 'right-center'}"> <i class="mdi mdi-table-edit  uk-text-muted mdi-24px"></i></div>
+                            </li>
+                            <li>
+                                <div data-uk-tooltip="{pos:'bottom'}" title="Delete" class="icon-adjust-profile-page border-radius-2px md-icon-light uk-button-dropdown" data-uk-dropdown="{mode:'hover' , pos : 'right-center'}"> <i class="mdi mdi-delete-variant  uk-text-muted mdi-24px"></i></div>
+                            </li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<div id="grid-wrapper" class="display-none">
+    <div class="row">
+        <div class="col s12 l4 m8">
+            <div class="card padding-5">
+                <div class="card-content">
+                    <div class="pull-right mdi-hover-icon">
+                        <i class="mdi mdi-dots-vertical mdi-24px text-muted"></i>
+                    </div>
+                    <div class="pull-left">
+
+                    </div>
+                    <span class="clearfix"></span>
+                    <div class="profile-image padding-bottom-5x">
+                        <center>
+                            <img src="http://placehold.it/200x200" height="82" width="82" class="img-profile-employee-list"/>
+                            <p class="text-muted font-size-15 font-weight-600 margin-top-8x">Travis Nelison</p>
+                            <p class="font-size-11 text-muted margin-top-3x">Data Scientist</p>
+                            <br />
+                            <p class="font-size-11 text-muted">name@yourcompany.com</p>
+                            <p class="font-size-11 text-muted margin-top-2x">+91-0000000000</p>
+                            <br />
+                            <p class="text-muted badge badge-primary width-20">Active</p>
+                            <br />
+                            <button class="text-white font-size-12 btn waves-effect waves-light btn-mini ">View Profile</button>
+                        </center>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col s12 l4 m8">
+            <div class="card padding-5">
+                <div class="card-content">
+                    <div class="pull-right mdi-hover-icon">
+                        <i class="mdi mdi-dots-vertical mdi-24px text-muted"></i>
+                    </div>
+                    <div class="pull-left">
+
+                    </div>
+                    <span class="clearfix"></span>
+                    <div class="profile-image padding-bottom-5x">
+                        <center>
+                            <img src="http://placehold.it/200x200" height="82" width="82" class="img-profile-employee-list"/>
+                            <p class="text-muted font-size-15 font-weight-600 margin-top-8x">Alex Garret</p>
+                            <p class="font-size-11 text-muted margin-top-3x">Data Scientist</p>
+                            <br />
+                            <p class="font-size-11 text-muted">name@yourcompany.com</p>
+                            <p class="font-size-11 text-muted margin-top-2x">+91-0000000000</p>
+                            <br />
+                            <p class="text-muted badge badge-warning width-20">Resigned</p>
+                            <br />
+                            <button class="text-white font-size-12 btn waves-effect waves-light btn-mini ">View Profile</button>
+                        </center>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col s12 l4 m8">
+            <div class="card padding-5">
+                <div class="card-content">
+                    <div class="pull-right mdi-hover-icon">
+                        <i class="mdi mdi-dots-vertical mdi-24px text-muted"></i>
+                    </div>
+                    <div class="pull-left">
+
+                    </div>
+                    <span class="clearfix"></span>
+                    <div class="profile-image padding-bottom-5x">
+                        <center>
+                            <img src="http://placehold.it/200x200" height="82" width="82" class="img-profile-employee-list"/>
+                            <p class="text-muted font-size-15 font-weight-600 margin-top-8x">Your Name</p>
+                            <p class="font-size-11 text-muted margin-top-3x">Data Scientist</p>
+                            <br />
+                            <p class="font-size-11 text-muted">name@yourcompany.com</p>
+                            <p class="font-size-11 text-muted margin-top-2x">+91-0000000000</p>
+                            <br />
+                            <p class="text-muted badge badge-info width-20">Hold</p>
+                            <br />
+                            <button class="text-white font-size-12 btn waves-effect waves-light btn-mini ">View Profile</button>
+                        </center>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
