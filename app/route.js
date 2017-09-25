@@ -1,59 +1,59 @@
 hr.config([ '$routeProvider' , '$locationProvider' ,  function($routeProvider , $locationProvider){
     $routeProvider
         .when('/companyProfile' , {
-        templateUrl : 'public/companyProfile.html',
+        templateUrl : 'public/organisation/companyProfile.html',
         controller : 'companyProfileController'
     })
         .when('/departments' , {
-        templateUrl : 'public/departments.html',
+        templateUrl : 'public/organisation/departments.html',
         controller : 'departmentsController'
     })
         .when('/designations' , {
-        templateUrl : 'public/designations.html',
+        templateUrl : 'public/organisation/designations.html',
         controller : 'designationsController'
     })
         .when('/locations' , {
-        templateUrl : 'public/locations.html',
+        templateUrl : 'public/organisation/locations.html',
         controller : 'locationsController'
     })
         .when('/groups' , {
-        templateUrl : 'public/groups.html',
+        templateUrl : 'public/organisation/groups.html',
         controller : 'groupsController'
     })
         .when('/domain' , {
-        templateUrl : 'public/domain.html',
+        templateUrl : 'public/organisation/domain.html',
         controller : 'domainController'
     })
         .when('/rebranding' , {
-        templateUrl : 'public/rebranding.html',
+        templateUrl : 'public/organisation/rebranding.html',
         controller : 'rebrandingController'
     })
         .when('/holiday' , {
-        templateUrl : 'public/holiday.html',
+        templateUrl : 'public/organisation/holiday.html',
         controller : 'holidayController'
     })
         .when('/addEmployee' , {
-        templateUrl : 'public/addEmployee.html',
+        templateUrl : 'public/employee/addEmployee.html',
         controller : 'addEmployeeController'
     })
         .when('/employeeProfile' , {
-        templateUrl : 'public/employeeProfile.html',
+        templateUrl : 'public/employee/employeeProfile.html',
         controller : 'employeeProfileController'
     })
         .when('/addJob' , {
-        templateUrl : 'public/addJob.html',
+        templateUrl : 'public/recruitment/addJob.html',
         controller : 'addJobController'
     })
         .when('/profileSources' , {
-        templateUrl : 'public/profileSources.html',
+        templateUrl : 'public/recruitment/profileSources.html',
         controller : 'profileSourcesController'
     })
         .when('/skillSet' , {
-        templateUrl : 'public/skillSet.html',
+        templateUrl : 'public/recruitment/skillSet.html',
         controller : 'skillSetController'
     })
         .when('/viewResume' , {
-        templateUrl : 'public/resumes.html',
+        templateUrl : 'public/recruitment/resumes.html',
         controller : 'resumeController'
     })
         .otherwise({
