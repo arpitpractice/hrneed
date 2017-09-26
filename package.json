@@ -1,8 +1,8 @@
 {
   "name": "hrneedcheck",
   "version": "1.0.0",
-  "description": "Just to check materializecss",
-  "main": "index.js",
+  "description": "Hrms materializecss",
+  "main": "server.js",
   "scripts": {
     "start": "node server.js"
   },
