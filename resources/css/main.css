@@ -467,11 +467,7 @@ table>tbody>tr>td{
 .waves-effect.waves-blue-light .waves-ripple {
     background-color: #44B4E5;
 }
-.active{
-    background-color:#0874C9;
-    border-color:#0874C9;
-    color:#fff
-}
+
 .pointer{
     cursor:pointer;
 }
@@ -480,21 +476,117 @@ table>tbody>tr>td{
 .side-nav::-webkit-scrollbar {
     width: 8px;
 }
- 
+
 /* Track */
 .side-nav::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
     -webkit-border-radius: 0px;
     border-radius: 0px;
 }
- 
+
 /* Handle */
 .side-nav::-webkit-scrollbar-thumb {
-    -webkit-border-radius: 10px;
+    -webkit-border-radius: 0px;
     border-radius: 0px;
     background: #86bce6; 
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
 }
 .side-nav::-webkit-scrollbar-thumb:window-inactive {
-	background: #86bce6; 
+    background: #86bce6; 
+}
+
+.modal1.left .modal1-dialog,
+.modal1.right .modal1-dialog {
+    position: fixed;
+    margin: auto;
+    width: 320px;
+    height: 100%;
+    -webkit-transform: translate3d(0%, 0, 0);
+    -ms-transform: translate3d(0%, 0, 0);
+    -o-transform: translate3d(0%, 0, 0);
+    transform: translate3d(0%, 0, 0);
+}
+
+.modal1.left .modal1-content,
+.modal1.right .modal1-content {
+    height: 100%;
+    overflow-y: auto;
+}
+
+.modal1.left .modal1-body,
+.modal1.right .modal1-body {
+    padding: 15px 15px 80px;
+}
+
+/*Left*/
+.modal1.left.fade .modal1-dialog{
+    left: -320px;
+    -webkit-transition: opacity 0.3s linear, left 0.3s ease-out;
+    -moz-transition: opacity 0.3s linear, left 0.3s ease-out;
+    -o-transition: opacity 0.3s linear, left 0.3s ease-out;
+    transition: opacity 0.3s linear, left 0.3s ease-out;
+}
+
+.modal1.left.fade.in .modal1-dialog{
+    left: 0;
+}
+
+/*Right*/
+.modal1.right.fade .modal1-dialog {
+    right: -320px;
+    -webkit-transition: opacity 0.3s linear, right 0.3s ease-out;
+    -moz-transition: opacity 0.3s linear, right 0.3s ease-out;
+    -o-transition: opacity 0.3s linear, right 0.3s ease-out;
+    transition: opacity 0.3s linear, right 0.3s ease-out;
+}
+
+.modal1.right.fade.in .modal1-dialog {
+    right: 0;
+}
+
+/* ----- MODAL STYLE ----- */
+.modal1-content {
+    border-radius: 0;
+    border: none;
+}
+
+.modal1-header {
+    border-bottom-color: #EEEEEE;
+    background-color: #FAFAFA;
+}
+
+/* ----- v CAN BE DELETED v ----- */
+.modal-close{
+    background-color: transparent!important;
+    color:red;
+    border:none;
+    font-size:16px!important;
+    position: relative;
+    top:3px;
+}
+.modal-close:hover{
+    background-color: transparent!important; 
+    border:none;
+    font-size:16px!important;
+    position: relative;
+    top:3px;
+}
+#modal-width-type-1{
+    width:60%;
+}
+#modal-width-type-2{
+    width:30%;
+}
+.modal-padding{
+    padding:10px;
+}
+.prefix{
+    position:relative;
+    top:12px;
+}
+.font-weight-icon{
+    font-weight:200;
+}
+.btn-save{
+    width:50%;
 }

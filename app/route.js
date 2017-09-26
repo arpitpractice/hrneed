@@ -1,4 +1,4 @@
-hr.config([ '$routeProvider' , '$locationProvider' ,  function($routeProvider , $locationProvider){
+hr.config([ '$routeProvider' , '$locationProvider'  , function($routeProvider , $locationProvider){
     $routeProvider
         .when('/companyProfile' , {
         templateUrl : 'public/organisation/companyProfile.html',
@@ -59,6 +59,6 @@ hr.config([ '$routeProvider' , '$locationProvider' ,  function($routeProvider , 
         .otherwise({
         redirectTo :  '/companyProfile'
     }); 
-
+    
     $locationProvider.hashPrefix('');
 }]);

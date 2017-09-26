@@ -1,1 +1,1 @@
-var hr  = angular.module('hr' , ['ngRoute' , 'ngSanitize']);
+var hr  = angular.module('hr' , ['ngRoute' , 'ngSanitize', 'ui.materialize']);
