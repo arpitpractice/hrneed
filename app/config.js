@@ -24,6 +24,5 @@ hr.run(function ($rootScope, $location,$route) {
 
         //hide loading gif
         $rootScope.layout.loading = false;
-
     });
 });
