@@ -30,8 +30,8 @@ hr.controller('addEmployeeController' , ['$scope','$rootScope','$http' ,'$sce', 
 hr.controller('employeeProfileController' , ['$scope','$rootScope','$http' ,'$sce', function($scope ,$rootScope, $http , $sce){
     
     $scope.currentTab = 'about';//for the tabs.
-    
-    $scope.choices = [2015 , 2016 , 2017];
+
+    $scope.choices = ['Demo' , 'Dropdown' , 'Content' ,'Fetch', 'From','Controller'];
     
 }]);
 

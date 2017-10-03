@@ -2,7 +2,7 @@
 body{
     font-family: 'Roboto' , sans-serif !important;
     background-color: #EEECEA !important;
-    overflow-y: scroll !important;
+    overflow-y: auto!important;
 }
 
 .side-nav{
@@ -802,7 +802,7 @@ li {
     border-right: 12px solid transparent;
     border-left: 12px solid transparent;
     border-bottom: 12px solid #0386CA;
-    transform:rotate(45deg);
+ transform:rotate(45deg);
     left: -15px; 
     top: 10px;
 }

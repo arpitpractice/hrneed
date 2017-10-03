@@ -67,3 +67,8 @@ $('.dropdown-button').dropdown({
     belowOrigin : true
 });
 
+$(document).ready(function(){
+   if($('.modal1').hasClass('in')){
+       $('body').css('overflow' , 'hidden');
+   }
+});
