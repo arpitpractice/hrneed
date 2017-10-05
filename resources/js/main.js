@@ -15,8 +15,6 @@ $(document).ready(function(){
     $('.modal').modal();
 });
 
-
-
 $(document).ready(function() {
     $('select').material_select();
 });
@@ -65,10 +63,4 @@ $('.dropdown-button').dropdown({
     alignment: 'left', // Displays dropdown with edge aligned to the left of button
     stopPropagation: false,
     belowOrigin : true
-});
-
-$(document).ready(function(){
-   if($('.modal1').hasClass('in')){
-       $('body').css('overflow' , 'hidden');
-   }
 });
