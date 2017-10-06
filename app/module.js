@@ -61,6 +61,5 @@ hr.config([ '$routeProvider' , '$locationProvider'  , function($routeProvider , 
         .otherwise({
         redirectTo :  '/companyProfile'
     }); 
-    
     $locationProvider.hashPrefix('');
 }]);
