@@ -810,3 +810,24 @@ li {
      border-left:2px solid #ABA6A1 !important;
      border-top:2px solid #ABA6A1 !important;
 }
+/* Let's get this party started */
+.modal1-dialog::-webkit-scrollbar {
+    width: 8px;
+}
+
+/* Track */
+.modal1-dialog::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+}
+/* Handle */
+.modal1-dialog::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+    background: #86bce6; 
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+.modal1-dialog::-webkit-scrollbar-thumb:window-inactive {
+    background: #86bce6; 
+}
