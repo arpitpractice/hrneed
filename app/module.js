@@ -1,4 +1,5 @@
-var hr  = angular.module('hr' , ['ngRoute' , 'ngSanitize', 'ui.materialize']);
+var hr  = angular.module('hr' , ['ngRoute' , 'ngSanitize', 'ui.materialize','ngAnimate','ngWYSIWYG']);
+
 
 hr.config([ '$routeProvider' , '$locationProvider'  , function($routeProvider , $locationProvider){
     $routeProvider
@@ -58,8 +59,45 @@ hr.config([ '$routeProvider' , '$locationProvider'  , function($routeProvider , 
         templateUrl : 'public/recruitment/resumes.html',
         controller : 'resumeController'
     })
+        .when('/performance' , {
+        templateUrl : 'public/performance/index.html',
+        controller : 'performController'
+    })
+        .when('/employee-goal-analysis/:param' , {
+        templateUrl : 'public/performance/employee-goals-analysis.html',
+        controller : 'employee_goals_analysis_Controller'
+    })
+      .when('/companyDirectory' , {
+        templateUrl : 'public/companyDirectory/index.html',
+        controller : 'companyDirectoryController'
+    })
+    .when('/templates' , {
+        templateUrl : 'public/templates/index.html',
+        controller : 'templatesController'
+    })
+     .when('/recordTemplate' , {
+        templateUrl : 'public/templates/record-template.html',
+        controller : 'recordTemplateController'
+    })
+    .when('/mailMergeTemplate' , {
+        templateUrl : 'public/templates/mail-merge-template.html',
+        controller : 'mailMergeTemplateController'
+    })
+    .when('/shiftSettings' , {
+        templateUrl : 'public/organisation/shift.html',
+        controller : 'shiftController'
+    })
+    .when('/performanceAnalytics' , {
+        templateUrl : 'public/performance/analytics.html',
+        controller : 'analyticsPerformance'
+    })
+    .when('/attendance' , {
+        templateUrl : 'public/attendance/index.html',
+        controller : 'attendanceController'
+    })
         .otherwise({
         redirectTo :  '/companyProfile'
     }); 
+
     $locationProvider.hashPrefix('');
 }]);

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="html">
     <head>
         <title>HrNeed</title>
         <!--All meta tags-->
@@ -21,36 +21,45 @@
         <!--All icons-->
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
         <link rel="stylesheet" href="vendors/css/materialdesignicons.min.css" media="all"/>
-
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <!--End of the all icons-->
 
         <link rel="stylesheet" href="vendors/css/materialize.min.css"/>
         <link rel="stylesheet" href="resources/css/modals.css"/>
+        <!--Editor css -->
+        <link rel="stylesheet" href="vendors/css/editor.min.css"/>
+        <link rel="stylesheet" href="vendors/css/highcharts.css"/>
+<!--        <link rel="stylesheet" href="vendors/css/fullCalender.css" data-turbolinks-track="true"/>-->
         <link rel="stylesheet" href="resources/css/init.css"/>
         <link rel="stylesheet" href="resources/css/main.css"/>
         <link rel="stylesheet" href="resources/css/style.css"/>
-        <link rel="stylesheet" href="resources/css/mediaQuery.css"/>        
+        <link rel="stylesheet" href="resources/css/mediaQuery.css"/> 
         <!--All Javascript file-->
+        <script src="vendors/js/moment.min.js"></script>
         <script src="vendors/js/jquery.min.js"></script>
+        <!--Angular codes -->
         <script src="vendors/js/angular.min.js"></script> 
         <script src="vendors/js/angular-route.min.js"></script>
         <script src="vendors/js/angular-aria.min.js"></script>
         <script src="vendors/js/angular-sanitize.min.js"></script>
         <script src="vendors/js/angular-messages.js"></script>
         <script src="vendors/js/angular-resource.min.js"></script>
+        <script src="vendors/js/angular-animate.min.js"></script>
+        <!--End of the  Angular libraries -->
         <script src="vendors/js/hammer.min.js"></script>
         <script src="vendors/js/materialize.js"></script>
         <script src="vendors/js/angular-materialize.min.js"></script>
         <script src="vendors/js/notify.js"></script>
-        <script src="vendors/js/dropdown.js"></script>
-        <!--Angular codes-->
+        <script src="vendors/js/wysiwyg.min.js"></script>
+        <script src="vendors/js/highcharts.js"></script>
+<!--        <script src="vendors/js/fullCalender.js" data-turbolinks-track="true"></script>-->
         <script src="resources/js/modal.js"></script>
-        <script src="dist/js/app.min.js"></script>
-
-        <!--Custom js-->
-        <script src="resources/js/main.js"></script>
         <script src="resources/js/script.js"></script>
+        <script src="resources/js/main.js"></script>
+        <!-- Calender plugins-->
+        <script src="dist/js/app.min.js"></script>
+        <!--Custom js-->
     </head>
     <body ng-app="hr" ng-cloak id="body">
 
@@ -87,34 +96,40 @@
                                     <li><a href="#/departments" class="waves-effect waves-blue-light">Departments</a></li>
                                     <li><a href="#/designations" class="waves-effect waves-blue-light">Designations</a></li>
                                     <li><a href="#/locations" class="waves-effect waves-blue-light">Locations</a></li>
+                                    <li><a href="#/profileSources" class="waves-effect waves-blue-light">Profile Sources</a></li>
+                                    <li><a href="#/skillSet" class="waves-effect waves-blue-light">Skill Set</a></li>
                                     <li><a href="#/groups" class="waves-effect waves-blue-light">Groups</a></li>
                                     <li><a href="#/domain" class="waves-effect waves-blue-light">Domain</a></li>
                                     <li><a href="#/rebranding" class="waves-effect waves-blue-light">Rebranding</a></li>
+                                    <li><a href="#/shiftSettings" class="waves-effect waves-blue-light">Shift Settings</a></li>
                                     <li><a href="#/holiday" class="waves-effect waves-blue-light">Holiday</a></li>
                                 </ul>
                             </div>
                         </li>
                         <li>
-                            <a class="collapsible-header waves-effect waves-blue">Employee <i class="material-icons">&#xE1BD;</i></a>
+                            <a href="#/addEmployee" class="collapsible-header waves-effect waves-blue"> Employees <i class="mdi mdi-account-outline"></i></a>
+                        </li>
+                        <li>
+                            <a href="#/addJob" class="collapsible-header waves-effect waves-blue">Recruitment <i class="mdi mdi-equal-box"></i></a>
+                        </li>
+                        <li>
+                            <a class="collapsible-header waves-effect waves-blue">Perfomance <i class="mdi mdi-chart-line"></i></a>
 
                             <div class="collapsible-body">
                                 <ul>
-                                    <li><a href="#/addEmployee" class="waves-effect waves-blue-light">Add Employee</a></li>
-                                    <li><a href="#/employeeProfile" class="waves-effect waves-blue-light">Employee Profile</a></li>
+                                    <li><a href="#/performance" class="waves-effect waves-blue-light">Performance</a></li>
+                                    <li><a href="#/performanceAnalytics" class="waves-effect waves-blue-light">Performance Analytics </a></li>
                                 </ul>
                             </div>
                         </li>
                         <li>
-                            <a class="collapsible-header waves-effect waves-blue">Recruitment <i class="material-icons">&#xE1BD;</i></a>
-
-                            <div class="collapsible-body">
-                                <ul>
-                                    <li><a href="#/addJob" class="waves-effect waves-blue-light">Add Jobs</a></li>
-                                    <li><a href="#/profileSources" class="waves-effect waves-blue-light">Profile Sources</a></li>
-                                    <li><a href="#/skillSet" class="waves-effect waves-blue-light">Skill Set</a></li>
-                                    <li><a href="#/viewResume" class="waves-effect waves-blue-light">Resumes</a></li>
-                                </ul>
-                            </div>
+                            <a href="#/companyDirectory" class="collapsible-header waves-effect waves-blue">Company Directory <i class="mdi mdi-file-tree"></i></a>
+                        </li>
+                        <li>
+                            <a href="#/attendance" class="collapsible-header waves-effect waves-blue">Attendance<i class="mdi mdi-timer-sand"></i></a>
+                        </li>
+                        <li>
+                            <a href="#/templates" class="collapsible-header waves-effect waves-blue">Email Templates <i class="mdi mdi-email-outline"></i></a>
                         </li>
                     </ul>
                 </li>
@@ -122,10 +137,25 @@
         </ul>
         <div class="row">
             <div class="col s12 m12 l9 loffset">
-                <ng-view>
+                <main ng-view>
 
-                </ng-view>    
+                </main>    
             </div>
         </div>
+        
     </body>
-</html
+</html>
+<noscript>
+    <script>
+        document.getElementById('body').style.display="none";
+    </script>
+    <span id="js-only-view"><center> Please enable Javasctipt</center></span>
+    <style>
+        html,body,head{
+            display:none;
+        }
+        #js-only-view center{ 
+            display:block !important;
+        }
+    </style>
+</noscript>

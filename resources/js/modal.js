@@ -1,5 +1,3 @@
-
-
 +function ($) {
   'use strict';
 
@@ -160,7 +158,7 @@
     var that = this
     this.$element.hide()
     this.backdrop(function () {
-      that.$body.removeClass('modal-open')
+      that.$body.removeClass('modal1-open')
       that.resetAdjustments()
       that.resetScrollbar()
       that.$element.trigger('hidden.bs.modal1')
@@ -291,17 +289,17 @@
     })
   }
 
-  var old = $.fn.modal
+  var old = $.fn.modal1
 
-  $.fn.modal             = Plugin
-  $.fn.modal.Constructor = Modal
+  $.fn.modal1             = Plugin
+  $.fn.modal1.Constructor = Modal
 
 
   // MODAL NO CONFLICT
   // =================
 
-  $.fn.modal.noConflict = function () {
-    $.fn.modal = old
+  $.fn.modal1.noConflict = function () {
+    $.fn.modal1 = old
     return this
   }
 
@@ -327,3 +325,4 @@
   })
 
 }(jQuery);
+
